@@ -24,6 +24,7 @@ alias cc='claude'                         # shadows /usr/bin/cc in interactive s
 alias zshconfig='${EDITOR:-nano} ~/.zshrc'
 alias ewez='${EDITOR:-nano} ~/.wezterm.lua'
 alias dot='code ~/dotfiles'               # open dotfiles repo in VS Code
+alias aliases='sed -n "s/^alias //p" ~/.zshrc'   # list my custom aliases
 alias reload='source ~/.zshrc'
 alias ..='cd ..'
 alias add='git add .'
