@@ -1,0 +1,31 @@
+# herdr cheat sheet: `keysh` shows all, `keysh <word>` filters, `keysh -e` edits.
+# Format: [Section] header, then "shortcut   description" lines.
+
+[Keys: prefix = Ctrl+B, release, then the key]
+Ctrl+B ?        help (every binding)
+Ctrl+B s        settings
+Ctrl+B q        detach (session keeps running; `herdr` reattaches)
+Ctrl+B v        split pane side by side
+Ctrl+B -        split pane top / bottom
+Ctrl+B h j k l  move to pane left / down / up / right
+Ctrl+B Tab      cycle to next pane
+Ctrl+B z        zoom pane (toggle fullscreen)
+Ctrl+B r        resize mode
+Ctrl+B x        close pane
+Ctrl+B c        new tab
+Ctrl+B n / p    next / previous tab
+Ctrl+B 1..9     jump to tab N
+Ctrl+B Shift+X  close tab
+Ctrl+B w        workspace picker
+Ctrl+B g        goto
+Ctrl+B Shift+N  new workspace
+Ctrl+B b        toggle sidebar
+Ctrl+B Shift+R  reload config
+
+[Commands]
+herdr                       start or reattach
+herdr status                is the server running?
+herdr server stop           stop server (closes all panes)
+herdr server reload-config  apply config.toml edits
+herdr config check          validate ~/.config/herdr/config.toml
+herdr --default-config      print every setting with its default

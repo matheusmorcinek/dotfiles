@@ -1,0 +1,22 @@
+# Personal shortcut cheat sheet: `keys` shows all, `keys <word>` filters, `keys -e` edits.
+# Format: [Section] header, then "shortcut   description" lines.
+
+[Shell aliases]
+cc              claude
+..              cd ..
+add             git add .
+push            git push
+pull            git pull
+m               git switch main
+reload          source ~/.zshrc
+zshconfig       edit ~/.zshrc in nvim
+ewez            edit ~/.wezterm.lua in nvim
+
+[Shell keys]
+Ctrl+F          accept the grey autosuggestion (from history)
+
+[WezTerm tabs]
+Cmd+Shift+]     next tab (also Ctrl+Tab)
+Cmd+Shift+[     previous tab (also Ctrl+Shift+Tab)
+Cmd+T           new tab
+Cmd+W           close tab
