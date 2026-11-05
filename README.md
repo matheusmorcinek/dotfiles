@@ -11,6 +11,11 @@ git clone https://github.com/matheusmorcinek/dotfiles ~/dotfiles
 
 The script installs Homebrew, the apps in `Brewfile`, and Oh My Zsh, then symlinks
 each config to where its program looks for it. Existing files are kept as `*.backup`.
+It then asks for your git name and email and saves them to `~/.gitconfig.local`, which
+is not part of this repo, so each Mac can commit as a different person.
+
+Not installed by the script: Claude Code, VS Code, a Node version (`nvm install --lts`),
+and your GitHub login (`gh auth login`).
 
 ## How it works
 

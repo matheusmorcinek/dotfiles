@@ -39,3 +39,14 @@ link .config/keys/herdr.txt   "$HOME/.config/keys/herdr.txt"
 # AI tools: one AGENTS.md, read by all of them
 link AGENTS.md                "$HOME/.claude/CLAUDE.md"
 link AGENTS.md                "$HOME/.codex/AGENTS.md"
+
+# ─── 4. Git identity ─────────────────────────────────────────────────
+# .gitconfig includes this file. It stays out of the repo so each Mac can differ.
+if [ ! -f "$HOME/.gitconfig.local" ]; then
+  git_name="" git_email=""
+  while [ -z "$git_name" ]; do read -rp "Git name: " git_name; done
+  while [ -z "$git_email" ]; do read -rp "Git email: " git_email; done
+  git config --file "$HOME/.gitconfig.local" user.name "$git_name"
+  git config --file "$HOME/.gitconfig.local" user.email "$git_email"
+  echo "saved git identity to $HOME/.gitconfig.local"
+fi
