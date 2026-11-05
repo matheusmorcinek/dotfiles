@@ -1,5 +1,5 @@
-# Kiro CLI pre block. Keep at the top of this file.
-[[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh"
+# Added by Kiro CLI
+case ":$PATH:" in *":$HOME/.local/bin:"*) ;; *) export PATH="${PATH:+$PATH:}$HOME/.local/bin" ;; esac
 
 # ─── PATH ────────────────────────────────────────────────────────────
 typeset -U path PATH                      # drop duplicate entries automatically
@@ -31,6 +31,7 @@ alias add='git add .'
 alias push='git push'
 alias pull='git pull'
 alias m='git switch main'
+alias cconfig='nvim ~/.claude/CLAUDE.md'
 
 # Cheat sheets in ~/.config/keys/ (<cmd> / <cmd> <word> / <cmd> -e)
 keys()  { _cheatsheet ~/.config/keys/keys.txt "$@" }    # general shortcuts
@@ -52,5 +53,3 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh   # ghost
 bindkey '^f' autosuggest-accept                                         # Ctrl+F accepts the suggestion
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  # must stay last of the plugins
 
-# Kiro CLI post block. Keep at the bottom of this file.
-[[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh"
