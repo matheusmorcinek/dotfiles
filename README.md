@@ -1,6 +1,6 @@
 # dotfiles
 
-My Mac setup: WezTerm, zsh + Oh My Zsh, herdr, git, and one shared `AGENTS.md` for AI tools.
+My Mac setup: WezTerm, zsh + Oh My Zsh, Neovim (LazyVim), herdr, git, and one shared `AGENTS.md` for AI tools.
 
 ## New Mac
 
@@ -27,7 +27,7 @@ GitHub (matheusmorcinek/dotfiles)
         ▲
         │  symlinks (created once by install.sh)
         │
-~/.zshrc, ~/.wezterm.lua, ~/.gitconfig, ~/.config/herdr/config.toml,
+~/.zshrc, ~/.wezterm.lua, ~/.gitconfig, ~/.config/herdr/config.toml, ~/.config/nvim,
 ~/.claude/CLAUDE.md, ~/.codex/AGENTS.md   ← where programs look
 ```
 

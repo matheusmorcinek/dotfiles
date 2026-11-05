@@ -33,6 +33,7 @@ link .wezterm.lua             "$HOME/.wezterm.lua"
 link .gitconfig               "$HOME/.gitconfig"
 link .config/git/ignore       "$HOME/.config/git/ignore"
 link .config/herdr/config.toml "$HOME/.config/herdr/config.toml"
+link .config/nvim             "$HOME/.config/nvim"
 link .config/keys/keys.txt    "$HOME/.config/keys/keys.txt"
 link .config/keys/herdr.txt   "$HOME/.config/keys/herdr.txt"
 
