@@ -7,6 +7,7 @@ path=(
   /opt/homebrew/bin
   /opt/homebrew/sbin
   $HOME/.local/bin                        # claude, kiro-cli, Antigravity
+  "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
   $path
 )
 export PATH
