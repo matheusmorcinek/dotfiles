@@ -3,6 +3,10 @@ onboarding = false
 [ui.toast]
 delivery = "system"
 
+[ui.sound]
+enabled = true
+path = "sounds/notification.mp3"
+
 [theme]
 name = "rose-pine"
 auto_switch = false
